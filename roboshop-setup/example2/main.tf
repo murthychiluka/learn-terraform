@@ -18,7 +18,7 @@ variable "instances"  {
 
 }
 
-output"public -ip" {
+output"public_ip" {
 
     value = aws_instance.frontend.public_ip
 }
