@@ -13,9 +13,8 @@ resource "aws_instance" "frontend" {
  
 }
 
-variable "instances"  {
-  default = ["rabbitmq", "mongodb" , "user" , "catalogue" , "cart" ]  
-
+variable "instances" {
+  default = ["cart", "catalogue", "user", "payment", "shipping"]
 }
 
 output"public_ip" {
