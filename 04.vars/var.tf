@@ -61,6 +61,3 @@ output "course_names" {
   value = var.didi.*.course_name
 }
 
-output "trainer_names" {
-  value = var.didi.*.trainer_name
-}
