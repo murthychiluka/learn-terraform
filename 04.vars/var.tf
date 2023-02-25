@@ -58,6 +58,6 @@ variable "dadi" {
 }
 
 output "course_name" {
-  value = var.didi.*.course_name
+  value = var.dadi.*.course_name
 }
 
