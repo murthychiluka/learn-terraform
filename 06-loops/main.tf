@@ -3,4 +3,7 @@ variable "d1" {
 }
 
 resource "null_resource" "nothing" {
+count = var.d1
+
   }
+
