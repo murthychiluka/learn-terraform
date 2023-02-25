@@ -57,7 +57,7 @@ variable "dadi" {
   ]
 }
 
-output "course_names" {
+output "course_name" {
   value = var.didi.*.course_name
 }
 
