@@ -50,7 +50,7 @@ variable "dadi" {
      trainer_name = "sudeep"
    },
    { 
-    course_name = "devops
+    course_name = "devops"
     trainer_name" ="Anudeep"
    }
 
