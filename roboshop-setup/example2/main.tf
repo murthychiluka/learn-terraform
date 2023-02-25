@@ -6,9 +6,9 @@ data "aws_ami" "ami" {
 
 
 resource "aws_instance" "frontend" {
-    count                = length("var.instances")
-    ami                  = data.aws_ami.ami.image_id
-    instance_type        = "t2.micro"
+    count                  = length("var.instances")
+    ami                    = data.aws_ami.ami.image_id
+    instance_type          = "t2.micro"
     vpc_security_group_ids = ["sg-0e05adc3a9fdbddf0"]
     tags = {
     Name = var.instances[count.index]
