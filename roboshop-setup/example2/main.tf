@@ -17,3 +17,8 @@ variable "instances"  {
   default = ["rabbitmq", "mongodb" , "user" , "catalogue" , "cart" ]  
 
 }
+
+output"public -ip" {
+
+    value = aws_instance.frontend.public_ip
+}
