@@ -10,10 +10,14 @@ resource "aws_instance" "ec2" {
   instance_type          = var.instance_type
   vpc_security_group_ids = [var.sg_id]
   tags = {
-    Name = "${var.component}"
+    Name = var.component
   }
 }
 
 variable "component" {}
 variable "instance_type" {}
 variable "sg_id" {}
+
+output "private_ip" {
+  value = aws_instance.ec2.private_ip
+}
