@@ -26,3 +26,5 @@ resource "aws_route53_record" "record" {
 variable "component" {}
 variable "instance_type" {}
 variable "sg_id" {}
+
+#
