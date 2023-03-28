@@ -17,12 +17,12 @@
 
 variable "bucket_names" {
   type    = list(string)
-  default = ["pra1", "sud", "ruchi"]
+  default = ["pra1", "sud", "ruchis"]
 }
 
 resource "aws_s3_bucket" "buckets" {
   count = length(var.bucket_names)
-  #region  = "us-east-1"
+
   bucket = var.bucket_names[count.index]
   #acl     = "private"
 }
