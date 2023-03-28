@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "buckets" {
 
   for_each = var.bucket_names
 
-  buckets = each.value["bucket_names"]
-  acl     = "private"
+  bucket = each.value["bucket_names"]
+  acl    = "private"
 
 }
