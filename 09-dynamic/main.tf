@@ -13,11 +13,11 @@
 
 
 resource "aws_s3_bucket" "buckets" {
-  region = "us-east-1"
+
 
   for_each = var.bucket_names
 
   bucket = each.value["bucket_names"]
-  acl    = "private"
+
 
 }
