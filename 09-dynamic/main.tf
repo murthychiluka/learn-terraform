@@ -17,7 +17,7 @@
 
 variable "bucket_names" {
   type    = list(string)
-  default = ["back1", "back2", "back3"]
+  default = ["w1", "f1", "q2"]
 }
 
 resource "aws_s3_bucket" "buckets" {
