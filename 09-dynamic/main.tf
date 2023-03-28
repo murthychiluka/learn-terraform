@@ -4,11 +4,11 @@ variable "bucket_names" {
 }
 
 resource "aws_s3_bucket" "buckets" {
-  region   = "us-east-1"
+  #region   = "us-east-1"
   for_each = { for name in var.bucket_names : name => name }
 
 
-  acl = "private"
+  # acl = "private"
 }
 
 
