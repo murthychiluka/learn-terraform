@@ -7,9 +7,7 @@ output "sample1" {
 }
 
 
-output "sample1" {
-  value = "Hello World"
-}
+
 
 output "murthy" {
   value = "hi"
